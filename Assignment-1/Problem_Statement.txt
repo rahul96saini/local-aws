@@ -1,0 +1,26 @@
+Assignment-01 (Load Balancer & Auto Scaling Group)
+
+Objective:
+
+The goal of this assignment is to design and implement a cloud infrastructure that supports the deployment of a Spring 3 Hibernate application. The infrastructure will be designed for high availability, scalability, and security. The application will be deployed on private servers to ensure a secure environment.
+
+Spring 3 Hibernate Link-
+
+https://github.com/opstree/spring3hibernate.git
+
+Task Overview:  Infrastructure Design and Diagram Submission
+
+-  Design a comprehensive infrastructure diagram.
+-  The diagram should illustrate all key components, including networking, servers, load balancers, and auto-scaling groups.
+-  Submit the diagram for review.
+-  Final Implementation Code
+
+Note: After receiving feedback on the infrastructure diagram, proceed with the implementation.
+
+Hint:
+VPC: Network for all resources.
+Subnets: Public (LB) and Private (App Servers).
+LB: Distributes traffic to private subnets.
+ASG: Scales app servers based on demand.
+Security Groups: Manage traffic for LB and servers.
+NAT Gateway: Enables internet access for private subnets.Assignment-01 (Load Balancer & Auto Scaling Group)

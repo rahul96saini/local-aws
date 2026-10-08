@@ -1,0 +1,33 @@
+Assignment 2
+
+Learn about various deployment strategies and implement them while integrating Amazon S3 for asset management and deployment artifacts.
+Deployment Strategies to Explore: 
+
+Recreate Deployment 
+Rolling Deployment 
+Blue-Green Deployment 
+A/B Deployment 
+Canary Deployment 
+Task Breakdown: 
+1. Research and Understand Deployment Strategies:
+Implementation: 
+• Must Do:
+• Recreate Deployment:
+Manually deploy an application using an EC2 instance. 
+Use an AMI snapshot for the application. 
+Store static assets (e.g., images, CSS, JavaScript) in an Amazon S3 bucket and configure your application to retrieve these assets from S3. 
+• Rolling Deployment:
+Set up an Auto Scaling Group (ASG) with a minimum and maximum number of instances. 
+Deploy the initial version of the application. 
+Create a new launch configuration with the updated application version and update the ASG. 
+Store deployment artifacts in an S3 bucket for easy retrieval 
+• Good To Do:
+• Blue-Green Deployment:
+Create two identical environments (blue and green) using EC2 instances. 
+Deploy the new version of the application to the inactive environment (green). 
+Use a Load Balancer to switch traffic between the environments. 
+Store configuration files or environment-specific assets in S3. 
+• Canary Deployment:
+Deploy the new version of the application to a small subset of instances in the ASG. 
+Monitor performance and user feedback. 
+Use S3 to store logs or metrics from the canary deployment.
